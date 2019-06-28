@@ -1,0 +1,206 @@
+body,
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    line-height: 1.8em;
+    color: whitesmoke;
+    /* background-color: #000; */
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* background-image: url(kawa.png); */
+/* height: 100vh; */
+/* background-size: cover; */
+/* background-position: center; */
+.main {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px;
+    margin: auto;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 13px;
+    margin-top: 13px;
+    margin-right: 13px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    border: 1px solid #000;
+}
+
+ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.current{
+    background-color: #000;
+    color: #fff;
+}
+@media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+g {
+    opacity: 90%;
+    font-family: Arial;
+    font-size: 0px;
+    color: white;
+    /* mix-blend-mode: difference; */
+    /* filter: brightness(150%) grayscale(10); */ 
+  }
+.tekst a{
+    text-decoration: none;
+    line-height: 1.2em;
+    text-align: center;
+    opacity: 90%;
+    font-family: 'Raleway', sans-serif;
+    font-style: thin;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: white;
+    animation:opac 1.5s}@keyframes opac{from{opacity:0} to{opacity:1};
+}  
+
+.tekst{
+    text-align: center;
+}
+.tekst a:hover
+{
+    background-color: #000;
+    animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1};
+}  
+@media only screen and (max-device-width: 1600px) {
+
+    .pimg,
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        /* background-attachment: scroll; */
+        min-height: 400px;
+    }
+}
+
+/* span {
+    margin-top: 2000px;
+    margin-bottom: 200px;
+} */
+
+.pimg0,
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    /* opacity: 0.7; */
+    filter:brightness(60%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pimg0 {
+    position: relative;
+    background-image:
+        /* linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.4)),*/
+        url("img/cappuciono.jpg");
+    min-height: 100vh;
+    /* margin-bottom: -40px; */
+}
+
+.pimg1 {
+    /* position: relative; */
+    background-image:
+        url("img/plantacja.jpg");
+    min-height: 400px;
+}
+
+.pimg2 {
+    background-image:
+        url("img/smile.jpg");
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image:
+        url("img/maszyna.jpg");
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image:
+        url("img/kawa.png");
+    min-height: 400px;
+}
+
+.flex-akapit-biel{
+    height: 500px;
+}
+.gatunki {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    background-color: white;
+    align-items: center; 
+    color: black;
+}
+
+img .foto{
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+}
+.foto:hover{
+    opacity: 50%;
+}
+
+.akapit {
+    /* transform: translate(-50%, -50%) */
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-items: baseline; 
+    text-align: justify;
+    padding: 10vh;
+    width: 700px;
+    height: 400px;
+    color: #000;
+}
+.picture{
+display: flex;
+flex-basis: auto;
+
+}
+@media only screen and (max-width: 800px) {
+    img{
+        display: none;
+    } 
+  }
